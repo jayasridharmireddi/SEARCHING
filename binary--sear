@@ -1,0 +1,29 @@
+Class Binary{
+  void search(int arr[],int n,int x){
+      int l=0;
+      int r= n-1;
+      while(l<=r){
+         int m=l+(r-1)/2;
+         if(arr[m]==x){
+             s.o.p("yes at"+m);
+           }
+         if(x>arr[m]){
+            l=m+1;
+         }
+         else{
+           r=m-1;
+         }
+      }
+      s.o.p("not found")
+  }
+  public static void main(String[] args){
+    Binary b=new Bianry();
+    int arr[]={2,4,6,8,11,23}[];
+    int n= arr.length;
+    int x= 9;
+    b.search(arr,n,x);
+  }
+}
+
+
+O/P--------------------------   not found
